@@ -1,0 +1,9 @@
+FROM scratch
+
+COPY bin/etcd /etcd
+COPY bin/etcdctl /etcdctl
+
+EXPOSE 7001
+EXPOSE 4001
+
+ENTRYPOINT ["/etcd"]
